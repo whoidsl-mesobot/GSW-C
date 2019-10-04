@@ -1,0 +1,20 @@
+AC_INIT([libgswteos-10],
+	m4_esyscmd([.build-aux/git-version-gen .tarball-version]),
+	[https://github.com/TEOS-10/GSW-C/issues]
+	[],
+	[https://github.com/TEOS-10/GSW-C],
+)
+AC_CONFIG_AUX_DIR([.build-aux])
+AC_CONFIG_MACRO_DIRS([.build-aux/m4])
+AC_CONFIG_HEADERS([config.h])
+AM_INIT_AUTOMAKE([subdir-objects dist-xz -Wall -Werror foreign])
+AC_CONFIG_FILES([Makefile])
+
+AM_PROG_AR
+AC_PROG_LIBTOOL
+AM_PROG_CC_C_O
+AC_PROG_CC_STDC
+
+AC_OUTPUT
+
+LT_INIT([dlopen])
