@@ -6,8 +6,8 @@ dist_noinst_DATA = gsw_data_v3_0.nc
 lib_LTLIBRARIES = libgswteos-10.la
 include_HEADERS = gswteos-10.h
 
-libgswteos_10_la_SOURCES = gsw_oceanographic_toolbox.c gsw_saar.c
-
+libgswteos_10_la_SOURCES = gsw_oceanographic_toolbox.c gsw_saar.c \
+			   gsw_internal_const.h
 libgswteos_10_la_CFLAGS = $(AM_CFLAGS)
 libgswteos_10_la_LDFLAGS = -module -shared -export-dynamic \
 			   -version-info 3:5:0
