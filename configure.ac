@@ -1,6 +1,6 @@
 AC_INIT([libgswteos-10],
 	m4_esyscmd([.build-aux/git-version-gen .tarball-version]),
-	[https://github.com/TEOS-10/GSW-C/issues]
+	[https://github.com/TEOS-10/GSW-C/issues],
 	[],
 	[https://github.com/TEOS-10/GSW-C],
 )
