@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+gswteos_10_db_dir=@sysconfdir@/gswteos-10/db
+
+Name: @PACKAGE_NAME@
+Description: a C library for GSW TEOS-10
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lgswteos-10 -lm
+Cflags: -I${includedir}/gswteos-10
