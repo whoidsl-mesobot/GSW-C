@@ -1,10 +1,12 @@
+ACLOCAL_AMFLAGS = -I .build-aux/m4
 AM_CFLAGS = -O3 -Wall -std=gnu99
-
-dist_doc_DATA = README LICENSE
-dist_noinst_DATA = gsw_data_v3_0.nc
 
 lib_LTLIBRARIES = libgswteos-10.la
 include_HEADERS = gswteos-10.h
+dist_doc_DATA = README LICENSE
+dist_noinst_DATA = gsw_data_v3_0.nc
+EXTRA_DIST = .build-aux/git-version-gen
+pkgconfig_DATA = gswteos-10.pc
 
 libgswteos_10_la_SOURCES = gsw_oceanographic_toolbox.c gsw_saar.c \
 			   gsw_internal_const.h
