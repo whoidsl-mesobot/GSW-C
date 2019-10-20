@@ -11,7 +11,7 @@ pkgconfig_DATA = gswteos-10.pc
 libgswteos_10_la_SOURCES = gsw_oceanographic_toolbox.c gsw_saar.c \
 			   gsw_internal_const.h
 libgswteos_10_la_CFLAGS = $(AM_CFLAGS)
-libgswteos_10_la_LDFLAGS = -module -shared -export-dynamic \
+libgswteos_10_la_LDFLAGS = -lm -module -shared -export-dynamic \
 			   -version-info 3:5:0
 
 TESTS = gsw_check_functions
